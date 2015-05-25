@@ -82,7 +82,7 @@ public class ShoppingCartTest {
     }
     
     @Test
-    public void gives20PercentDiscountWhenMoreThan10StarProducts() throws InvalidProductQuantityException {
+    public void givesBothDiscountsWhenStarProductsAndMoreThan10Products() throws InvalidProductQuantityException {
         for (int i = 0; i < 10; i++) {
             shoppingCart.addProduct(buildStarProduct("TV", 600));
         }
